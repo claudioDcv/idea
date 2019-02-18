@@ -8,17 +8,15 @@
 }
 
 .menu .menu-bottom {
-    background-color: #522c74;
+    background-color: rgb(147, 75, 161);
     height: 40px;
 }
 
 .menu .menu-bottom .menu-bottom-item-category {
     line-height: 40px;
-    background-color: #e54096;
+    background-color: rgb(222, 77, 150);
     height: 100%;
-    width: 100px;
-    text-align: right;
-    padding: 0 0 0 12px;
+    padding: 0;
     font-weight: 600;
     box-sizing: border-box;
     font-size: 14px;
@@ -34,10 +32,11 @@
     height: 0;
     border-top: 20px solid transparent;
     border-bottom: 20px solid transparent;
-    border-left: 23px solid #e54096;
+    border-left: 23px solid rgb(222, 77, 150);
     position: absolute;
     right: -23px;
     top: 0;
+    z-index: 1;
 }
 
 .menu .menu-bottom .menu-bottom-item-category:before {
@@ -47,7 +46,7 @@
     position: absolute;
     left: -400px;
     top: 0;
-    background: #e54096;
+    background: rgb(222, 77, 150);
 }
 
 .menu .menu-bottom .menu-bottom-item-category:hover {
@@ -63,12 +62,14 @@
 }
 
 .menu-item {
+    position: relative;
     line-height: 40px;
     font-size: 14px;
     height: 100%;
-    padding: 0 10px;
+    padding: 0 15px;
     display: inline-block;
     vertical-align: text-bottom;
+    cursor: pointer;
 }
 
 .menu-item:hover {
@@ -116,6 +117,33 @@ border-radius: 5px;
 .menu-top-buttons > button:last-child {
     margin-right: 0;
 }
+
+.menu-submenu {
+    display: none;
+    position: absolute;
+}
+
+.menu-item:hover .menu-submenu {
+    display: block;
+    top: 38px;
+    left: 0;
+    z-index: 2;
+    background: #7d4187;
+    padding: 0;
+    margin: 0;
+    box-shadow: 0px 3px 3px 0px #0e0e0e47;
+}
+
+.menu-submenu li {
+    display: block;
+    padding: 0 15px;
+    white-space: nowrap;
+}
+
+.menu-submenu li:hover {
+    background: #934ba1;
+}
+
 
 /* **** RESPONSIVE ****** */
 

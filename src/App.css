@@ -3687,8 +3687,8 @@ textarea.ant-input {
 }
 .ant-btn-primary {
   color: #fff;
-  background-color: #7d4187;
-  border-color: #7d4187;
+  background-color: rgb(147, 75, 161);
+  border-color: rgb(147, 75, 161);
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.12);
   -webkit-box-shadow: 0 2px 0 rgba(0, 0, 0, 0.045);
           box-shadow: 0 2px 0 rgba(0, 0, 0, 0.045);
@@ -15448,17 +15448,17 @@ textarea.ant-input-number {
           flex: 0 0 auto;
 }
 .ant-layout-header {
-  background: #001529;
+  background: #793385;
   padding: 0 50px;
   height: 64px;
   line-height: 64px;
 }
 .ant-layout-footer {
-  background: #522c74;
+  background: #793385;
   padding: 24px 50px;
   color: rgba(255, 255, 255, 0.65);
   font-size: 14px;
-  border-top: solid 3px #e54096;
+  border-top: solid 3px rgb(222, 77, 150);
   min-height: 400px;
 }
 .ant-layout-content {

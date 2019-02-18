@@ -1,7 +1,7 @@
 import * as React from 'react';
 
 export interface ItemProps {
-    children: String,
+    children: String | React.ReactNode,
 }
 
 function Item (props: ItemProps) {

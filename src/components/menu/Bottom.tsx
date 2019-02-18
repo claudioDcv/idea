@@ -2,6 +2,7 @@ import * as React from 'react';
 import { ItemCategory } from './ItemCategory';
 import Item from './Item';
 import ItemSearch from './ItemSearch';
+import SubMenu from './SubMenu';
 
 export interface BottomProps {
 }
@@ -21,16 +22,31 @@ export default class Bottom extends React.Component<BottomProps, BottomState> {
     return (
       <div className="menu-bottom">
         <div className="menu-container">
-            <ItemCategory />
-            <Item>Electro y Hogar</Item>
-            <Item>Belleza</Item>
-            <Item>Infantil</Item>
-            <Item>Estadías</Item>
-            <Item>Cine</Item>
-            <Item>Gift Card</Item>
-            <Item>Entretención</Item>
-            <Item>Servicios</Item>
-            <ItemSearch />
+          <ItemCategory />
+          <Item>
+            <span>Productos</span>
+            <SubMenu>
+              <li>Electro</li>
+              <li>Tecnología</li>
+              <li>Línea Blanca</li>
+              <li>Electro</li>
+            </SubMenu>
+          </Item>
+          <Item>
+            <span>Viajes</span>
+            <SubMenu>
+              <li>Electro</li>
+              <li>Tecnología</li>
+              <li>Línea Blanca</li>
+              <li>Electro</li>
+              <li>Electro</li>
+            </SubMenu>
+          </Item>
+          <Item>Gift Card</Item>
+          <Item>Entretención</Item>
+          <Item>Descuentos</Item>
+          <Item>Servicios</Item>
+          <ItemSearch />
         </div>
       </div>
     );

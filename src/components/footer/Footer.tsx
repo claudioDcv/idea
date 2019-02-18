@@ -44,7 +44,7 @@ export default class Footer extends React.Component<FooterProps, FooterState> {
                         <Col className="gutter-row mb-20" span={6} sm={7} md={7} xs={24}>
                             <List
                                 size="small"
-                                header={<div>¿Donde acumular y canjear?</div>}
+                                header={<div>¿Dónde acumular y canjear?</div>}
                                 dataSource={unds}
                                 renderItem={(item: string) => (<List.Item>{item}</List.Item>)}
                             />
@@ -52,7 +52,7 @@ export default class Footer extends React.Component<FooterProps, FooterState> {
                         <Col className="gutter-row mb-20" span={6} sm={7} md={7} xs={24}>
                             <List
                                 size="small"
-                                header={<div>Conocenos</div>}
+                                header={<div>Conócenos</div>}
                                 dataSource={conocenos}
                                 renderItem={(item: string) => (<List.Item>{item}</List.Item>)}
                             />
@@ -72,7 +72,7 @@ export default class Footer extends React.Component<FooterProps, FooterState> {
                                 <div className="social-links-header">¡Canjea Ya!</div>
                             </div>
                             <div className="social-links-list">
-                                <Button type="primary" className="button-secondary">Incríbete</Button>
+                                <Button type="primary" className="button-secondary">¡Inscríbete!</Button>
                             </div>
                         </Col>
                     </Row>

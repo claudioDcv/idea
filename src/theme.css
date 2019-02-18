@@ -7,8 +7,8 @@ html, body {
 }
 
 .button-secondary {
-    background-color: #e54096;
-    border-color: #e54096;
+    background-color: rgb(222, 77, 150);
+    border-color: rgb(222, 77, 150);
 }
 .button-secondary:hover {
     background-color: #eb6bad;
@@ -17,8 +17,8 @@ html, body {
 
 .button-secondary:focus,
 .button-secondary:active {
-    background-color: #e54096;
-    border-color: #e54096;
+    background-color: rgb(222, 77, 150);
+    border-color: rgb(222, 77, 150);
 }
 
 /* ************************ */
