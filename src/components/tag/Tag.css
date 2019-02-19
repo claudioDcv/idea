@@ -1,0 +1,40 @@
+.product-card {
+    position: relative;
+}
+
+.product-card .tag-container {
+    position: absolute;
+    top: 1px;
+    left: 1px;
+}
+.product-card .tag {
+    color: white;
+    font-size: 12px;
+    padding: 2px 6px;
+    border-radius: 0 5px 5px 0;
+    margin: 0 0 5px 0;
+}
+.product-card .tag.tag-show {}
+.product-card .tag.tag-hide { display: none; }
+.product-card .tag.tag-nuevo { background: #934ba1; }
+.product-card .tag.tag-descuento { background: #F44336; }
+.product-card .tag.tag-oferta { background: #de4d96; }
+.product-card .tag.tag-tarjeta {
+    line-height: 42px;
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+}
+
+.product-card .tag.tag-tarjeta span {
+    color: rgb(82, 44, 116);
+}
+
+.product-card .tag.tag-tarjeta img {
+    width: 50px;
+    margin-left: 5px;
+}
+

@@ -1,8 +1,11 @@
 import * as React from 'react';
 import './Points.css';
+import Tag from '../tag/Tag';
 
 export interface PointsProps {
     value: number,
+    hasTarjeta: boolean,
+    extra: React.ReactNode,
 }
 
 export interface PointsState {
@@ -10,8 +13,8 @@ export interface PointsState {
 
 export default class Points extends React.Component<PointsProps, PointsState> {
 
-    static showPoints = (value : number) : JSX.Element =>  {
-        return <span>{value.toLocaleString()} <small>puntos</small></span>
+    static showPoints = (value : number, extra: React.ReactNode) : JSX.Element =>  {
+        return <span>{value.toLocaleString()} <small>puntos </small>{extra}</span>
     }
 
     constructor(props: PointsProps) {
@@ -22,9 +25,10 @@ export default class Points extends React.Component<PointsProps, PointsState> {
     }
 
     public render() {
+        const tarjeta = this.props.hasTarjeta ? 'tarjeta' : '';
         return (
-            <div className="card-points">
-                {Points.showPoints(this.props.value)}
+            <div className={`card-points card-points-${tarjeta}`}>
+                {Points.showPoints(this.props.value, this.props.extra)}
             </div>
         );
     }

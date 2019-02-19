@@ -75,7 +75,7 @@ html, body {
 
 .product-card {
     padding-top: 15px;
-    min-height: 400px;
+    min-height: 440px;
 }
 
 .product-card img {
@@ -91,7 +91,7 @@ html, body {
 
 .ant-card-meta-title {
     white-space: pre-wrap;
-    line-height: 18px;
+    line-height: 22px;
 }
 
 .card-footer {

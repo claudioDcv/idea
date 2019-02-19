@@ -13,6 +13,10 @@ export interface IProduct {
     description: String,
     points: number,
     image: string,
+    nuevo: boolean,
+    oferta: boolean,
+    descuento: boolean,
+    tarjeta: boolean,
 }
 
 export const productList: Array<IProduct> = [
@@ -50,6 +54,10 @@ export const productList: Array<IProduct> = [
         description: 'Juego de Play 4, el mejor del año',
         points: 15000,
         image: Prod01Jpg,
+        nuevo: true,
+        oferta: false,
+        descuento: true,
+        tarjeta: false,
     },
     {
         id: 13,
@@ -57,6 +65,10 @@ export const productList: Array<IProduct> = [
         description: 'Juego de Play 4, el mejor del año',
         points: 25000,
         image: Prod02Jpg,
+        nuevo: true,
+        oferta: false,
+        descuento: true,
+        tarjeta: false,
     },
     {
         id: 14,
@@ -64,6 +76,10 @@ export const productList: Array<IProduct> = [
         description: 'Juego de Play 4, el mejor del año',
         points: 15000,
         image: Prod03Jpg,
+        nuevo: true,
+        oferta: false,
+        descuento: false,
+        tarjeta: false,
     },
     {
         id: 15,
@@ -71,6 +87,10 @@ export const productList: Array<IProduct> = [
         description: 'Juego de Play 4, el mejor del año',
         points: 15000,
         image: Prod04Jpg,
+        nuevo: false,
+        oferta: false,
+        descuento: true,
+        tarjeta: false,
     },
     {
         id: 12,
@@ -78,6 +98,10 @@ export const productList: Array<IProduct> = [
         description: 'Juego de Play 4, el mejor del año',
         points: 15000,
         image: Prod01Jpg,
+        nuevo: true,
+        oferta: true,
+        descuento: true,
+        tarjeta: false,
     },
     {
         id: 13,
@@ -85,6 +109,10 @@ export const productList: Array<IProduct> = [
         description: 'Juego de Play 4, el mejor del año',
         points: 25000,
         image: Prod02Jpg,
+        nuevo: false,
+        oferta: false,
+        descuento: true,
+        tarjeta: true,
     },
     {
         id: 14,
@@ -92,6 +120,10 @@ export const productList: Array<IProduct> = [
         description: 'Juego de Play 4, el mejor del año',
         points: 15000,
         image: Prod03Jpg,
+        nuevo: true,
+        oferta: false,
+        descuento: false,
+        tarjeta: false,
     },
     {
         id: 15,
@@ -99,5 +131,9 @@ export const productList: Array<IProduct> = [
         description: 'Juego de Play 4, el mejor del año',
         points: 15000,
         image: Prod04Jpg,
+        nuevo: false,
+        oferta: false,
+        descuento: false,
+        tarjeta: false,
     },
 ];

@@ -10,6 +10,7 @@ import Banner03Jpg from '../../assets/banner-03.jpg';
 import { productList, IProduct } from '../../utils/productList';
 import { Link } from 'react-router-dom';
 import { makeProductUrl } from '../../utils/text';
+import Tag from '../tag/Tag';
 
 
 const { Meta } = Card;
@@ -80,7 +81,7 @@ export default class HomeItems extends React.Component<HomeItemsProps, HomeItems
 
         <Row gutter={20}>
           {this.state.productList.map(e => (
-            <Col key={e.id} className="gutter-row mb-20 text-center" span={6} lg={6} md={6} sm={8} xs={24}>
+            <Col key={e.id} className="gutter-row mb-20 text-center" span={6} lg={6} md={12} sm={12} xs={24}>
               <Card
                 className="product-card"
                 bordered
@@ -92,9 +93,17 @@ export default class HomeItems extends React.Component<HomeItemsProps, HomeItems
                   title={e.title}
                   description={e.description}
                 />
+                <div className="tag-container">
+                  <Tag display={e.descuento} type="descuento" />
+                  <Tag display={e.nuevo} type="nuevo" />
+                  <Tag display={e.oferta} type="oferta" />
+                </div>
 
                 <div className="card-footer">
-                  <Points value={e.points} />
+                  <Points
+                    value={e.points}
+                    hasTarjeta={e.tarjeta}
+                    extra={<Tag display={e.tarjeta} text="+$5.000 con " type="tarjeta" />} />
                   <Link to={`/producto/${makeProductUrl(e.id, e.title)}`}><Button block size="large" className="button-outline-primary">¡Lo Quiero!</Button></Link>
                 </div>
               </Card>
